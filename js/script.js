@@ -1,1 +1,1 @@
-"use strict";
+"use strict";for(var sectionImg=document.querySelectorAll(".section_img"),section=document.querySelectorAll(".section"),_loop=function(a){sectionImg[a].addEventListener("mouseover",function(){section[a].classList.add("active")}),sectionImg[a].addEventListener("mouseout",function(){section[a].classList.remove("active")})},i=0;i<section.length;i++)_loop(i);
