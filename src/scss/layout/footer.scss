@@ -1,0 +1,127 @@
+.footer_content{
+    background: #171717;
+    color: #fff;
+    padding: 60px 0 50px;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer_info{
+        .logo_text{
+            font-family: "Lato";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+            span{
+                font-family: "Lato";
+                text-transform: uppercase;
+                padding: 3px 5px;
+                background: $blue;
+                border-radius: 3px;
+            }
+        }
+        &_text{
+            font-size: 14px;
+            line-height: 22px;
+            color: #cecece;
+            padding: 30px 0 60px;
+            width: 250px;
+        }
+        &_title{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 25px;
+            padding-bottom: 20px;
+        }
+        &_social{
+            display: flex;
+            i{
+                width: 35px;
+                height: 35px;
+                border-radius: 3px;
+                font-size: 16px;
+                background: #373737;
+                text-align: center;
+                line-height: 35px;
+                margin-right: 15px;
+                color: #fff;
+                transition: all .3s;
+            }
+            i:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+    .footer_posts{
+        &_title{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 25px;
+            padding-bottom: 25px;
+        }
+        .footer_recents{
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            &_content{
+                max-width: 180px;
+            }
+            &_img{
+                width: 95px;
+                height: 95px;
+                margin-right: 20px;
+            }
+            &_title{
+                font-size: 15px;
+                line-height: 26px;
+                font-weight: 700;
+            }
+            &_text{
+                font-size: 14px;
+                line-height: 14px;
+                padding-top: 12px;
+                color: #CECECE;
+            }
+        }
+    }
+    .footer_contact{
+        max-width: 270px;
+        &_title{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 25px;
+            padding-bottom: 35px;
+        }
+        &_input{
+            background: #373737;
+            border-color: #373737;
+            color: #fff;
+        }
+        &_input::placeholder{
+            color: #AEB3BB;
+        }
+        &_btn:hover{
+            background: #CECECE;
+            color: $main_black;
+        }
+    }
+}
+.footer_foot{
+    background: #000;
+    color: #fff;
+    padding: 35px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_author a{
+        color: crimson;
+        font-weight: 700;
+        transition: all .3s;
+    }
+    .footer_author a:hover{
+        text-decoration: underline;
+    }
+}

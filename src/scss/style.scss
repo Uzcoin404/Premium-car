@@ -1,6 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    color: #fff;
-}
+@import "common/root.scss";
+@import "layout/header.scss";
+@import "layout/main.scss";
+@import "layout/footer.scss";
+@import "layout/media.scss";

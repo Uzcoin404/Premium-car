@@ -1,0 +1,44 @@
+- var recents = ["img/footer_post1.jpg", "img/footer_post2.jpg", "img/footer_post3.jpg"]
+footer.footer#Purchase
+    .footer_content 
+        .container 
+            .footer_info 
+                a.logo(href="#")
+                    h2.logo_text Premium 
+                        span Car
+                .footer_info_text Short description about the company Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                .footer_info_title Keep in touch
+                .footer_info_social 
+                    a(href="https://www.facebook.com/suyunbek.saydazimov.18/") 
+                        i.fab.fa-facebook-f
+                    a(href="https://twitter.com/MrUzcoin") 
+                        i.fab.fa-twitter 
+                    a(href="https://t.me/MrUzcoin") 
+                        i.fab.fa-pinterest 
+                    a(href="https://t.me/MrUzcoin") 
+                        i.fab.fa-google-plus-g 
+                    a(href="https://www.instagram.com/mruzcoin/") 
+                        i.fab.fa-instagram 
+            .footer_posts
+                .footer_posts_title Recent posts
+                .footer_post
+                    each img in recents 
+                        .footer_recents 
+                            img.footer_recents_img(src=img, alt="")
+                            .footer_recents_content 
+                                h3.footer_recents_title One of Saturn’s largest rings may be newer than…
+                                p.footer_recents_text Rickie Baroch - June 6, 2019
+            .footer_contact 
+                .footer_contact_title Newsletter
+                form(action="#") 
+                    input.footer_contact_input(type="text" placeholder="Your name" required)
+                    input.footer_contact_input(type="email" placeholder="Your email adress" required)
+                    button.footer_contact_btn.btn(href="#" type="submit") Subscribe to newsletter  
+    .footer_foot 
+        .container 
+            p.footer_author @2022 Suyunbek 
+                a(href="https://github.com/Uzcoin404")  (Uzcoin)
+            ul.nav_list 
+                each val in ['Home','Recipes','Article','Contact','Purchase']    
+                    li.nav_link 
+                        a(href=val)= val

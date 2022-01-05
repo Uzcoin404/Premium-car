@@ -1,0 +1,117 @@
+@media (max-width: 1920px) {
+    .container{
+        max-width: 1640px;
+    }
+}
+@media (max-width: 1680px) {
+    .container{
+        max-width: 1360px;
+    }
+}
+@media (max-width: 1400px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+@media (max-width: 1140px) {
+    .container{
+        max-width: 100%;
+    }
+}
+@media (max-width: 875px) {
+    .header_card:nth-child(2), .header_card:nth-child(3), .header_card:nth-child(4), .header_card:nth-child(5){
+        grid-column: span 2;
+    }
+    .main_sections{
+        width: 67.5%;
+    }
+    .main_panel{
+        width: 27.5%;
+    }
+}
+@media (max-width: 768px) {
+    .main .container{
+        flex-direction: column;
+    }
+    .main_sections{
+        width: 100%;
+    }
+    .main_panel{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        .panel_card, .panel_post{
+            max-width: 300px;
+            margin-right: 15px;
+        }
+    }
+    .panel_posts_item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .panel_tags{
+        max-width: 400px;
+    }
+    .most_popular_card{
+        width: 45% !important;
+    }
+}
+@media (max-width: 576px) {
+    .nav_menu{
+        display: block;
+    }
+    .nav_list{
+        position: fixed;
+        top: 0;
+        right: -110%;
+        width: 50%;
+        height: 100vh;
+        z-index: 99;
+        background: $color_black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+    }
+    .nav_list.active{
+        right: 0;
+    }
+    .nav_link{
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    .panel_tags{
+        max-width: 100%;
+    }
+    .most_popular_card{
+        width: 47.5% !important;
+        margin-bottom: 15px;
+    }
+    .footer_info{
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 475px) {
+    .header_card:nth-child(2), .header_card:nth-child(3), .header_card:nth-child(4), .header_card:nth-child(5){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .header_card:nth-child(1), .header_card:nth-child(4){
+        grid-column: span 4;
+    }
+    .panel_card, .panel_post, .panel_insta{
+        max-width: 100% !important;
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .most_popular_card{
+        width: 90% !important;
+    }
+    .header_card{
+        grid-column: span 4 !important;
+        grid-row: span 2; 
+    }
+}

@@ -1,0 +1,91 @@
+- var sections = ["img/section1.jpg", "img/section2.jpg", "img/section3.jpg", "img/section4.jpg", "img/section5.jpg"];
+- var posts = ["img/panel-post1.jpg", "img/panel-post2.jpg", "img/panel-post3.jpg"];
+- var instagram = ["img/panel-instagram1.jpg", "img/panel-instagram2.jpg", "img/panel-instagram3.jpg","img/panel-instagram4.jpg", "img/panel-instagram5.jpg", "img/panel-instagram6.jpg"];
+- var popular = ["img/popular1.jpg", "img/popular2.jpg", "img/popular3.jpg","img/popular4.jpg"];
+main.main 
+    .container 
+        .main_sections#Recipes
+            each img in sections
+                section.section 
+                    img(src=img, alt="Car").section_img
+                    .section_content 
+                        p.section_pin Vehicle
+                        h2.section_title One of Saturn’s largest rings may be newer than anyone
+                        p.section_info Rickie Baroch - June 6, 2019
+                        p.section_text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            .pagination 
+                i.fas.fa-chevron-left#pag_left
+                ul.pagination_list 
+                    li 1
+                    li.active 2
+                    li 3
+                    li 4
+                i.fas.fa-chevron-right#pag_right
+
+        .main_panel 
+            .panel_card 
+                img(src="img/panel_card.jpg", alt="")
+                h3.panel_card_title Leon Hunt
+                h4.panel_card_name Food & cooking bloger
+                p.panel_card_text Hi, I'm Leon. Cooking is the way I express my creative side to the world. Welcome to my Kitchen Corner on…
+                a.btn(href="#") Continue Reading
+            .panel_posts 
+                h2.panel_posts_title Popular posts
+                .panel_posts_item
+                    each img in posts
+                        .panel_post
+                            .panel_post_img
+                                img(src=img, alt="")
+                                p.panel_post_pin Vehicle
+                            h3.panel_post_title One of Saturn’s largest rings may be newer than anyone
+                            p.panel_post_text Rickie Baroch - June 6, 2019
+            .panel_insta 
+                h2.panel_insta_title.title Instagram
+                .panel_insta_item
+                    each img in instagram 
+                        img(src=img, alt="")
+                    a.btn(href="#") 
+                        i.fab.fa-instagram
+                        span View instagram
+            .panel_tags 
+                h2.panel_tags_title.title Tags 
+                .panel_tags_item
+                    a.panel_tag(href="#") Business
+                    a.panel_tag(href="#") Freelance
+                    a.panel_tag(href="#") Money
+                    a.panel_tag(href="#") Experience
+                    a.panel_tag(href="#") Lifestyle
+                    a.panel_tag(href="#") SEO
+                    a.panel_tag(href="#") Wordpress
+                    a.panel_tag(href="#") Marketing
+                    a.panel_tag(href="#") UX
+                    a.panel_tag(href="#") Modern
+                    a.panel_tag(href="#") Success
+                    a.panel_tag(href="#") Nature
+                    a.panel_tag(href="#") Productivity
+                    a.panel_tag(href="#") Sales page
+                    a.panel_tag(href="#") Sell
+                    a.panel_tag(href="#") Teamwork
+                    a.panel_tag(href="#") Monetize
+            .panel_contact#Contact
+                h2.panel_contact_title.title Email newsletter
+                .panel_contact_item
+                    p.panel_contact_text Sign up to receive email updates and to hear what's going on.
+                    form(action="#") 
+                        input.panel_contact_input(type="text" placeholder="Your name" required)
+                        input.panel_contact_input(type="email" placeholder="Your email adress" required)
+                        button.panel_contact_btn.btn(href="#" type="submit") Subscribe to newsletter  
+
+    .most_popular#Article
+        .container 
+            h2.most_popular_title Most popular 
+            .most_popular_cards
+                each img in popular 
+                    .most_popular_card 
+                        .most_popular_img 
+                            img(src=img, alt="")
+                            p.most_popular_pin BMW 
+                        h3.most_popular_card_title One of Saturn’s largest rings may be newer than anyone
+                        p.most_popular_text Rickie Baroch - June 6, 2019
+
+                

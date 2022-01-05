@@ -1,0 +1,141 @@
+.nav{
+    width: 100%;
+    padding: 30px 0;
+    background: #000000;
+    color: #fff;
+    transition: all .3s;
+    &.fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 999;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    &_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo_text{
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        span{
+            font-family: "Lato";
+            text-transform: uppercase;
+            padding: 3px 5px;
+            background: $blue;
+            border-radius: 3px;
+        }
+    }
+    &_list{
+        display: flex;
+    }
+    &_link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 30px;
+        a{
+            color: #fff;
+        }
+        a:hover{
+            color: $blue;
+        }
+    }
+    &_search{
+        color: #929EAF;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover{
+            color: $blue;
+        }
+    }
+    &_menu{
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+        z-index: 999;
+    }
+}
+.header{
+    &_cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        padding: 25px 0 75px;
+    }
+    &_card{
+        padding: 30px 20px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+        overflow: hidden;
+        min-height: 265px;
+        color: #fff;
+        transition: .5s;
+        &_pin{
+            font-size: 12px;
+            padding: 4px 12px;
+            background: $blue;
+            border-radius: 3px;
+            width: max-content;
+            transition: .5s;
+            .header_card:hover &{
+                transform: translateY(-200px);
+            }
+        }
+        &_text{
+            font-size: 14px;
+            line-height: 18px;
+            padding-bottom: 6px;
+        }
+        &_title{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &_footer{
+            transition: 0.5s;
+            .header_card:hover &{
+                transform: translateY(200px);
+            }
+        }
+    }
+    &_card:nth-child(1){
+        grid-column: span 2;
+        grid-row: span 2;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 0%, rgba(0, 0, 0, 0.75) 75%), url("../img/header_card1.png") no-repeat center / cover;
+        &:hover{
+            background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 100%, rgba(0, 0, 0, 0.75) 100%), url("../img/header_card1.png") no-repeat center / cover;
+        }
+    }
+    &_card:nth-child(2){
+        background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 0%, rgba(0, 0, 0, 0.75) 75%), url("../img/header_card2.png") no-repeat center / cover;
+        &:hover{
+            background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 100%, rgba(0, 0, 0, 0.75) 100%), url("../img/header_card2.png") no-repeat center / cover;
+        }
+    }
+    &_card:nth-child(3){
+        background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 0%, rgba(0, 0, 0, 0.75) 75%), url("../img/header_card3.png") no-repeat center / cover;
+        &:hover{
+            background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 100%, rgba(0, 0, 0, 0.75) 100%), url("../img/header_card3.png") no-repeat center / cover;
+        }
+    }
+    &_card:nth-child(4){
+        background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 0%, rgba(0, 0, 0, 0.75) 75%), url("../img/header_card4.png") no-repeat center / cover;
+        &:hover{
+            background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 100%, rgba(0, 0, 0, 0.75) 100%), url("../img/header_card4.png") no-repeat center / cover;
+        }
+    }
+    &_card:nth-child(5){
+        background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 0%, rgba(0, 0, 0, 0.75) 75%), url("../img/header_card5.png") no-repeat center / cover;
+        &:hover{
+            background: linear-gradient(180deg, rgba(0, 0, 0, 7.5e-05) 100%, rgba(0, 0, 0, 0.75) 100%), url("../img/header_card5.png") no-repeat center / cover;
+        }
+    }
+}

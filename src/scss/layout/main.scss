@@ -1,0 +1,300 @@
+.main{
+     .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_sections{
+        width: 65%;
+        padding-bottom: 80px;
+        .section{
+            position: relative;
+            padding-bottom: 200px;
+            &_img{
+                border-radius: 5px;
+                transition: all .3s;
+                transition-delay: .2s;
+            }
+            &_content{
+                position: absolute;
+                bottom: 8%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                z-index: 5;
+                padding: 30px;
+                background: #fff;
+                box-shadow: 0px 3px 10px 0px #0000001A;
+                border-radius: 5px;
+                transition: all .3s;
+            }
+            &_pin{
+                font-size: 12px;
+                padding: 4px 12px;
+                background: $blue;
+                border-radius: 3px;
+                width: max-content;
+                color: #fff;
+            }
+            &_text{
+                font-size: 14px;
+                line-height: 24px;
+                color: $color_gray;
+                padding-top: 15px;
+            }
+            &_info{
+                font-size: 14px;
+                line-height: 18px;
+                color: $color_gray;
+                font-style: italic;
+            }
+            &_title{
+                font-size: 25px;
+                line-height: 28px;
+                color: $color_black;
+                padding: 20px 0 15px;
+            }
+            &.active .section_content{
+                bottom: -8%;
+                z-index: -1;
+            }
+            &.active .section_img{
+                z-index: 11;
+                transform: scale(1.05);
+            }
+        }
+        .section:last-child{
+            margin-bottom: 75px;
+        }
+        .pagination{
+            display: flex;
+            align-items: center;
+            background: #fff;
+            margin-bottom: 80px;
+            &_list{
+                display: flex;
+                align-items: center;
+                li{
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 16px;
+                    color: $color_black;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    border: 1px solid #E5E5E5;
+                    border-radius: 3px;
+                }
+                li.active{
+                    background: #000;
+                    color: #fff;
+                }
+            }
+            #pag_left, #pag_right{
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                font-size: 14px;
+                color: $color_black;
+                cursor: pointer;
+                margin-right: 10px;
+                border: 1px solid #E5E5E5;
+                border-radius: 3px;
+            }
+        }
+    }
+    &_panel{
+        width: 25%;
+        .panel_card{
+            padding: 0 0 60px 0;
+            &_text{
+                font-size: 15px;
+                line-height: 24px;
+                color: $color_gray;
+                padding-bottom: 20px;
+            }
+            &_name{
+                font-size: 14px;
+                line-height: 18px;
+                color: #999;
+                font-style: italic;
+                padding: 8px 0 14px;
+            }
+            &_title{
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $color_black;
+            }
+        }
+        .panel_posts_title{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            color: $color_black;
+            padding-bottom: 23px;
+        }
+        .panel_post{
+            padding-bottom: 40px;
+            &_text{
+                font-size: 15px;
+                line-height: 24px;
+                color: $color_gray;
+            }
+            &_title{
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $color_black;
+                padding: 20px 0 10px;
+            } 
+            &_img{
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                img{
+                    transition: .3s;
+                }
+            }
+            &_img:hover img{
+                transform: scale(1.1);
+            }
+            &_pin{
+                position: absolute;
+                top: 20px;
+                left: 30px;
+                font-size: 12px;
+                padding: 4px 12px;
+                background: $blue;
+                border-radius: 3px;
+                width: max-content;
+                color: #fff;
+            }
+        }
+        .panel_insta{
+            &_item{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+                padding-bottom: 60px;
+            }
+            img{
+                overflow: hidden;
+                transition: .3s;
+            }
+            img:hover{
+                transform: scale(1.1);
+            }
+            &_title{
+                padding-bottom: 25px;
+            }
+            .btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                grid-column: span 2;
+                i{
+                    font-size: 24px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .panel_tags{
+            &_item{
+                display: flex;
+                flex-wrap: wrap;
+                padding-bottom: 60px;
+            }
+            .panel_tag{
+                padding: 6px 16px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 400;
+                color: $color_black;
+                background: #EBEBEB;
+                border-radius: 3px;
+            }
+            .panel_tag:hover{
+                background: $blue;
+                color: #fff;
+            }
+            .panel_tag:last-child{
+                margin: 0;
+                width: max-content;
+                height: max-content;
+            }
+            &_title{
+                padding-bottom: 25px;
+            }
+        }
+        .panel_contact{
+            &_title{
+                padding-bottom: 15px;
+            }
+            &_text{
+                font-size: 14px;
+                line-height: 24px;
+                color: $color_gray;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .most_popular_cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .most_popular_card{
+        width: 23%;
+    }
+    .most_popular{
+        padding-bottom: 80px;
+        &_text{
+            font-size: 15px;
+            line-height: 24px;
+            color: $color_gray;
+        }
+        &_card_title{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            color: $color_black;
+            padding: 20px 0 10px;
+        } 
+        &_img{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            img{
+                transition: .3s;
+            }
+        }
+        &_img:hover img{
+            transform: scale(1.1);
+        }
+        &_pin{
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 12px;
+            padding: 4px 12px;
+            background: $blue;
+            border-radius: 3px;
+            width: max-content;
+            color: #fff;
+        }
+        .container{
+            display: block;
+        }
+        &_title{
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 25px;
+            padding: 0;
+        }
+    }
+}

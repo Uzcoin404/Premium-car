@@ -1,0 +1,24 @@
+nav.nav
+    .container
+        .nav_content 
+            a.logo(href="#")
+                h2.logo_text Premium 
+                    span Car
+            ul.nav_list 
+                each val in ['Home','Recipes','Article','Contact','Purchase']    
+                    li.nav_link 
+                        a(href=val)= val
+            .nav_search 
+                i.fas.fa-search
+            .nav_menu
+                i.fas.fa-bars
+
+header.header#Home
+    .container
+        .header_cards 
+            each card in Array(5)
+                .header_card
+                    p.header_card_pin Vehicle
+                    .header_card_footer 
+                        p.header_card_text Rickie Baroch - June 6, 2019
+                        h3.header_card_title One of Saturn's largest rings may be newer than anyone
